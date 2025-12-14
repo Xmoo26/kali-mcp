@@ -4,7 +4,7 @@
 set -e  # Exit on error
 
 echo "===== Building Docker container ====="
-docker build -t kali-mcp-server .
+docker build --no-cache -t kali-mcp-server .
 
 echo "===== Running Docker container ====="
 echo "The server will be available at http://localhost:8000/sse"
